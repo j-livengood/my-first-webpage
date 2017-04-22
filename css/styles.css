@@ -1,0 +1,198 @@
+/*===========================================
+    EX NUNS PAGE - MOBILE LAYOUT
+===========================================*/
+
+/*---- general resets ----*/
+
+@-ms-viewport: {
+  width: device-width;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  list-style: none;
+}
+
+img {
+  width: 90%;
+  border: 1px solid #efefef;
+  box-shadow: 0 0 0 1px hsl(0, 0%, 60%),
+              0 0 0 1px hsl(0, 0%, 85%);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+iframe {
+  display: none;
+}
+
+
+
+/*---- mobile flex layout ----*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+#music {
+  margin-bottom: 20px;
+}
+
+#music h2 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+#player {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#shows {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+#shows h2 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+#copy {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+
+/*---- colors ----*/
+
+body {
+  background-color: #000;
+}
+
+.heading, .text, .fa {
+  color: #efefef;
+}
+
+.fa {
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+
+
+/*---- fonts and font sizes ----*/
+
+.heading {
+  font-family: "Playfair Display", serif;
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+}
+
+#ex-nuns {
+  font-size: 4em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  letter-spacing: .06em;
+}
+
+#new-record {
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  padding-bottom: 15px
+}
+
+#main-nav {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.3em
+}
+
+
+
+/*===========================================
+    EX NUNS PAGE - TABLET BREAK POINT
+===========================================*/
+
+@media (max-width: 768px) {
+  #iframe-1 {
+    display: inline;
+  }
+}
+
+@media (min-width: 769px) {
+  
+  #iframe-2 {
+    display: inline;
+  }
+  
+  img {
+    max-width: 650px;
+  }
+  
+  aside {
+    max-width: 730px;
+  }
+  
+  #main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  #music, #shows {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  footer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  #copy {
+    padding: 0;
+    width: auto;
+    margin-left: auto;
+  }
+  
+  .fa {
+    padding: 10px;
+    margin-left: 10px;
+  }
+}
